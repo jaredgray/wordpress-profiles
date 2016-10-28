@@ -1,0 +1,50 @@
+<DataBinder:GridTemplate>
+  <Template>
+    <div class="ProfileHeading">
+      <img src="[DataBinder::RelativeUrl(~/Images/Application/profiles_32x32.png)]" alt="Profiles" />
+      <span>
+        [String(Portfolio_Intro)]
+      </span>
+    </div>
+    <table class="wp-list-table widefat fixed users">
+      <thead>
+        <tr>
+          <th id="profilegrid_part_cb" class="manage-column column-cb check-column"></th>
+          <th id="profilegrid_part_image" class="manage-column sortable desc">[String(Image)]</th>
+          <th id="profilegrid_part_displayname" class="manage-column sortable desc">[String(DisplayName)]</th>
+          <th id="profilegrid_part_blurb" class="manage-column sortable desc">[String(Blurb)]</th>
+          <th id="profilegrid_part_portfolioimages" class="manage-column sortable desc">[String(PortfolioImages)]</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <th colspan="5"></th>
+      </tfoot>
+      <tbody>
+        <DataBinder:Repeater Target="RowItemTemplate" />
+      </tbody>
+    </table>    
+  </Template>
+  <RepeaterTemplate ID="RowItemTemplate">
+    <tr>
+      <td class="">        
+        <input class="administrator" type="checkbox" value="[DataBinder::ID]" name="profilegrid_part_cb" />
+      </td>
+      <td class="">
+        <a href="?page=EditProfile&amp;ID=[DataBinder::ID]">
+          <img class="avatar avatar32 photo" src="[DataBinder::Image(ProfileThumbnail, '/wp-content/plugins/Profiles/Images/Application/111-user@2x.png')]" />
+        </a>
+      </td>
+      <td class="">
+        <a href="?page=EditProfile&amp;ID=[DataBinder::ID]">
+          [DataBinder::DisplayName]
+        </a>
+      </td>
+      <td class="">
+        [DataBinder::Blurb]
+      </td>
+      <td class="">[DataBinder::PortfolioImageCount] 
+      <input id="[DataBinder::Click]" type="submit" class="button-secondary action" value="Apply" />
+    </td>
+    </tr>    
+  </RepeaterTemplate>
+</DataBinder:GridTemplate>

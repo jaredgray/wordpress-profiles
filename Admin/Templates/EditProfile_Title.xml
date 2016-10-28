@@ -1,0 +1,10 @@
+﻿<DataBinder:GridTemplate>
+  <Template>
+    <div class="ProfileHeading">
+      <img src="[DataBinder::RelativeUrl(~/Images/Application/profile_32x32.png)]" alt="Profiles" />
+      <span>
+        [String(PortfolioEdit_Intro)]
+      </span>
+    </div>
+  </Template>
+</DataBinder:GridTemplate>  

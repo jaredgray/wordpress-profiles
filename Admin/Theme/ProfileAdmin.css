@@ -1,0 +1,8 @@
+﻿.ProfileHeading img { margin-right:10px; vertical-align:baseline; }
+.ProfileHeading { margin:15px 0 25px 0; border-bottom:dashed 1px #555; line-height:20px }
+.ProfileHeading span { vertical-align:super; }
+.ProfileHeading span span.Title { font-size:22px; vertical-align:baseline; }
+
+.Divider { clear:both; border-bottom:dashed 1px #555; margin-top:15px; }
+
+#update-nag, .update-nag { display:none; }

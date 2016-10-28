@@ -1,0 +1,6 @@
+
+System.Collections is a subset of a library that attempts to mimic the .NET library on code.google
+
+You can find this source code at the svn here:
+http://code.google.com/p/dotnetonphp/source/browse/?r=89#svn%2Ftrunk
+

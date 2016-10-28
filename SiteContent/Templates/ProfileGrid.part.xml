@@ -1,0 +1,25 @@
+<DataBinder:GridTemplate>
+  <Template>
+    <div class="Profiles">
+      <link rel="stylesheet" type="text/css" href="[DataBinder::RelativeUrl(~/SiteContent/Style/Default.css)]" />
+      <div class="clear"></div>
+      <div class="ProfileDivider">      
+      </div>
+      <div class="ProfileTitleImage"></div>
+      <div>
+        <DataBinder:Repeater Target="RowItemTemplate" />
+      </div>
+    </div>
+  </Template>
+  <RepeaterTemplate ID="RowItemTemplate">
+    <div class="ProfileImage">
+      <a href="/home/profiles/?ID=[DataBinder::ID]">
+        <img class="avatar avatar32 photo" src="[DataBinder::Image(ProfileThumbnail, '/wp-content/plugins/Profiles/Images/Application/111-user@2x.png')]" />
+      </a>
+      <br />
+      <span>
+        [DataBinder::DisplayName]
+      </span>
+    </div>
+  </RepeaterTemplate>
+</DataBinder:GridTemplate>

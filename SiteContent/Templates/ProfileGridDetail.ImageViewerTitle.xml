@@ -1,0 +1,6 @@
+﻿<DataBinder:GridTemplate>
+  <Template>
+    <div class="ProfileDetailPortfolioTitleImage"></div>
+    <div class="PortfolioDivider"></div>
+  </Template>
+</DataBinder:GridTemplate>

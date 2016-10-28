@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Jellyka Saint-Andrew's Queen"; font-size:45px;
+  src: url("Fonts/Saint-Andrews Queen.ttf");
+}
+
+
+.clear { clear:both; }
+
+.Profiles {}
+.Profiles .ProfileDivider, .ProfileDetail .ProfileDivider { border:dashed 1px #141414; margin:5px 0 10px 0; }
+.Profiles .ProfileTitleImage { background-image:url('Images/TheFrenchCutHairTeam.png'); width:298px; height:35px; margin-bottom:20px; }
+.Profiles .ProfileImage { float:left; margin:5px; }
+
+.ProfileDetail {}
+.ProfileDetail .ProfileImage { float:left; margin-right:20px; margin-bottom:5px; }
+.ProfileText, .ProfileText p { font-size:14px; }
+.ProfileDetail .ProfileDivider { border-color:#777; margin:10px 0px 25px 0px; }
+.ProfileName h2, #content .ProfileName h2 { font-size:20px; line-height:20px; }
+.css3 .ProfileName h2, .css3 #content .ProfileName h2 { font-size:45px; line-height:35px; font-family:"Jellyka Saint-Andrew's Queen",Verdana,Arial,Tahoma; }
+
+.ProfileDetailPortfolioTitleImage { background-image:url('Images/Portfolio.png'); width:109px; height:39px; margin-bottom:10px; margin-top:45px; }
+.PortfolioDivider { border:dashed 1px #141414; margin:0px 0 20px 0; }
+
+.Gallery { position: relative; float:left; }
+.__GalleryShell { background:url('Images/blogFrame1.png') no-repeat; padding-right:40px; padding-bottom:20px; position: relative; overflow: hidden; float:left; }
+._GalleryShell { background:url('Images/blogFrame2.png') no-repeat; padding-right:30px; padding-bottom:20px; position: relative; overflow: hidden; float:left; margin-top:-2px; }
+
+.ImageGallery { width:960px; position: relative; overflow: hidden; float:left; /*background-color: #232323;*/ background-image: url(Images/ImageViewer/bg_ImageViewer.png); border:solid 1px #141414; }
+.ImageGallery img { margin:0 auto; }
+.ImageGallery.GalleryShell { padding:2px 0px 0px 0px; left:4px; }
+.Idea2 .gallery.home { padding:0px; }
+.ImageGallery .navigation { height: 68px; background-image: url(Images/ImageViewer/bg_NavBar.png); background-repeat:repeat-x; text-align:center; /* 28px + 40px for elastic animation */ width: 100%; position: absolute; overflow: visible; bottom: -68px; z-index: 3; }
+
+.ImageGallery { margin-bottom:50px; }
+.ImageGallery .navigationControls { display:table; margin: 8px auto 0px auto; padding: 0 1em; }
+
+.ImageGallery .navigationControls .teaser { text-align: center; display: block; text-transform: uppercase; font-size: 1.2em; /* 12 points */ }
+
+.ImageGallery .navigationControls .thumb { float: left; border: 1px solid #CCC; width: 8px; height: 8px; text-indent: -9999px; margin: 1px 3px; background-color: none; }
+.ImageGallery .navigationControls .thumb:hover { border-color: #FFF; }
+.ImageGallery .navigationControls .disabled.thumb { border-color: #3D3D3D; background-color: #3D3D3D; cursor: default; }
+.ImageGallery .navigationControls .thumb.active { border-color: #fff; background-color: #454545; cursor: default; }
+
+.ImageGallery .navigationControls .previous, .ImageGallery .navigationControls .next { background-image: url(Images/ImageViewer/ig_arrows.png); display: block; width: 12px; height: 12px; float: left; text-indent: -9999px; }
+
+.ImageGallery .navigationControls .previous { background-position: 0 24px; }
+.ImageGallery .navigationControls .previous:hover { background-position: 0 12px; }
+.ImageGallery .navigationControls .disabled.previous { background-position: 0 0; cursor: default; }
+
+.ImageGallery .navigationControls .next { background-position: 12px 24px; }
+.ImageGallery .navigationControls .next:hover { background-position: 12px 12px; }
+.ImageGallery .navigationControls .disabled.next { background-position: 12px 0; cursor: default; }
+
+.ImageGallery img { position: absolute; top:2px; left:3px; border: none !important; }
